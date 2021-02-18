@@ -38,3 +38,15 @@ Use postman or [graphiql](https://www.electronjs.org/apps/graphiql) to post a qu
   }
 }
 ```
+
+http-request-demo
+* http-url: http://47.242.91.244:8080/graphiql
+* http-method: post
+* http-body
+  ``` json
+  {
+    "query":"{\n allContracts{\n contractId\n client{\n clientName\n }\n latestRisk {\n level\n date\n }\n }\n}",
+    "variables":null,
+    "operationName":null
+  }
+  ```
